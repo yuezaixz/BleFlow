@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-484" y="102"/>
         </scene>
-        <!--我的工作流-->
+        <!--所有工作流-->
         <scene sceneID="FTl-bj-ykY">
             <objects>
                 <viewController id="V7p-8R-XW0" customClass="ViewController" customModule="BleFlow" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,17 +34,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tFm-J4-uPr">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IBq-3p-bv9">
                                     <size key="itemSize" width="187" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="16" minY="10" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3hk-lg-YpU">
-                                        <rect key="frame" x="16" y="10" width="187" height="128"/>
+                                        <rect key="frame" x="16" y="60" width="187" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="J4t-Xb-fD3">
                                             <rect key="frame" x="0.0" y="0.0" width="187" height="128"/>
@@ -112,6 +112,31 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BNb-iu-kj8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="UJw-fH-PQ3">
+                                            <rect key="frame" x="0.0" y="0.0" width="356" height="50"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </searchBar>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGa-HS-z4c">
+                                            <rect key="frame" x="356" y="10" width="50" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="O7q-ZD-Lv7"/>
+                                            </constraints>
+                                            <state key="normal" title="取消"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="UJw-fH-PQ3" secondAttribute="bottom" id="DUR-RV-7Ih"/>
+                                        <constraint firstItem="aGa-HS-z4c" firstAttribute="centerY" secondItem="BNb-iu-kj8" secondAttribute="centerY" id="EOl-UC-Bpe"/>
+                                        <constraint firstItem="UJw-fH-PQ3" firstAttribute="top" secondItem="BNb-iu-kj8" secondAttribute="top" id="QNg-QA-Dly"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="aGa-HS-z4c" secondAttribute="trailing" id="S5O-Nh-bKz"/>
+                                        <constraint firstItem="aGa-HS-z4c" firstAttribute="leading" secondItem="UJw-fH-PQ3" secondAttribute="trailing" id="Wkd-v3-t5w"/>
+                                        <constraint firstItem="UJw-fH-PQ3" firstAttribute="leading" secondItem="BNb-iu-kj8" secondAttribute="leading" id="chc-Ei-3RI"/>
+                                    </constraints>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ybf-bh-28o"/>
@@ -123,14 +148,31 @@
                             <constraint firstItem="tFm-J4-uPr" firstAttribute="top" secondItem="Ybf-bh-28o" secondAttribute="top" id="oup-4C-ZGP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我的工作流" id="h4n-DJ-lec"/>
+                    <navigationItem key="navigationItem" title="所有工作流" id="3N2-cc-HD0"/>
                     <connections>
                         <outlet property="collectionView" destination="tFm-J4-uPr" id="Y8y-PK-gch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2T8-Rn-sxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-484.05797101449281" y="-505.58035714285711"/>
+            <point key="canvasLocation" x="222" y="-535"/>
+        </scene>
+        <!--我的工作流-->
+        <scene sceneID="UFu-Sx-KXs">
+            <objects>
+                <navigationController id="eLi-uh-QlE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的工作流" id="kfV-CP-gYd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bad-DX-BSM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="V7p-8R-XW0" kind="relationship" relationship="rootViewController" id="WZU-z3-RGH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XmH-fe-myd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-497" y="-535"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wg1-Wd-odq">
@@ -142,7 +184,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="V7p-8R-XW0" kind="relationship" relationship="viewControllers" id="xkc-r8-kkX"/>
+                        <segue destination="eLi-uh-QlE" kind="relationship" relationship="viewControllers" id="9ql-ze-5tA"/>
                         <segue destination="NcP-yr-b9u" kind="relationship" relationship="viewControllers" id="dMz-XM-FQd"/>
                     </connections>
                 </tabBarController>

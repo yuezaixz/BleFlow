@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		A61629A82568FB9200AAC404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61629A62568FB9200AAC404 /* Main.storyboard */; };
 		A61629AA2568FB9400AAC404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61629A92568FB9400AAC404 /* Assets.xcassets */; };
 		A61629AD2568FB9400AAC404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61629AB2568FB9400AAC404 /* LaunchScreen.storyboard */; };
+		A61629E42569102400AAC404 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629E32569102400AAC404 /* Flow.swift */; };
+		A61629F02569116700AAC404 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629E72569116600AAC404 /* Date+Ex.swift */; };
+		A61629F12569116700AAC404 /* Bundle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629E82569116600AAC404 /* Bundle+Ex.swift */; };
+		A61629F22569116700AAC404 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629E92569116600AAC404 /* UIColor+Hex.swift */; };
+		A61629F32569116700AAC404 /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629EA2569116600AAC404 /* UIDevice+Ex.swift */; };
+		A61629F42569116700AAC404 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629EB2569116600AAC404 /* UIView+Ex.swift */; };
+		A61629F52569116700AAC404 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629EC2569116700AAC404 /* UIViewController+Ex.swift */; };
+		A61629F62569116700AAC404 /* UIFont+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629ED2569116700AAC404 /* UIFont+Ex.swift */; };
+		A61629F72569116700AAC404 /* UIView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629EE2569116700AAC404 /* UIView+ViewModel.swift */; };
+		A61629F82569116700AAC404 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629EF2569116700AAC404 /* String+Ex.swift */; };
 		B00D5D67C5B431458668EFBE /* Pods_BleFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7D65B5EF2C9885A5D77362 /* Pods_BleFlow.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +37,16 @@
 		A61629A92568FB9400AAC404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A61629AC2568FB9400AAC404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A61629AE2568FB9400AAC404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61629E32569102400AAC404 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		A61629E72569116600AAC404 /* Date+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		A61629E82569116600AAC404 /* Bundle+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Ex.swift"; sourceTree = "<group>"; };
+		A61629E92569116600AAC404 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		A61629EA2569116600AAC404 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
+		A61629EB2569116600AAC404 /* UIView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
+		A61629EC2569116700AAC404 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		A61629ED2569116700AAC404 /* UIFont+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
+		A61629EE2569116700AAC404 /* UIView+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewModel.swift"; sourceTree = "<group>"; };
+		A61629EF2569116700AAC404 /* String+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		DE831CD3E05481BDDA44EFC7 /* Pods-BleFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleFlow.release.xcconfig"; path = "Target Support Files/Pods-BleFlow/Pods-BleFlow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +91,7 @@
 		A616299F2568FB9200AAC404 /* BleFlow */ = {
 			isa = PBXGroup;
 			children = (
+				A61629E225690FF900AAC404 /* Model */,
 				A61629D42568FC0600AAC404 /* Serivces */,
 				A61629D32568FBFA00AAC404 /* UI */,
 				A61629D22568FBF200AAC404 /* Extensions */,
@@ -104,6 +125,15 @@
 		A61629D22568FBF200AAC404 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A61629E82569116600AAC404 /* Bundle+Ex.swift */,
+				A61629E72569116600AAC404 /* Date+Ex.swift */,
+				A61629EF2569116700AAC404 /* String+Ex.swift */,
+				A61629E92569116600AAC404 /* UIColor+Hex.swift */,
+				A61629EA2569116600AAC404 /* UIDevice+Ex.swift */,
+				A61629ED2569116700AAC404 /* UIFont+Ex.swift */,
+				A61629EB2569116600AAC404 /* UIView+Ex.swift */,
+				A61629EE2569116700AAC404 /* UIView+ViewModel.swift */,
+				A61629EC2569116700AAC404 /* UIViewController+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -122,13 +152,20 @@
 			path = Serivces;
 			sourceTree = "<group>";
 		};
+		A61629E225690FF900AAC404 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A61629E32569102400AAC404 /* Flow.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EC90BB7B2A47E01329DEF19F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				7AD631B2F952AB6B457DA94B /* Pods-BleFlow.debug.xcconfig */,
 				DE831CD3E05481BDDA44EFC7 /* Pods-BleFlow.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -246,9 +283,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61629F22569116700AAC404 /* UIColor+Hex.swift in Sources */,
+				A61629F72569116700AAC404 /* UIView+ViewModel.swift in Sources */,
+				A61629F52569116700AAC404 /* UIViewController+Ex.swift in Sources */,
+				A61629F82569116700AAC404 /* String+Ex.swift in Sources */,
 				A61629A52568FB9200AAC404 /* ViewController.swift in Sources */,
+				A61629F32569116700AAC404 /* UIDevice+Ex.swift in Sources */,
+				A61629E42569102400AAC404 /* Flow.swift in Sources */,
+				A61629F62569116700AAC404 /* UIFont+Ex.swift in Sources */,
+				A61629F12569116700AAC404 /* Bundle+Ex.swift in Sources */,
 				A61629A12568FB9200AAC404 /* AppDelegate.swift in Sources */,
 				A61629A32568FB9200AAC404 /* SceneDelegate.swift in Sources */,
+				A61629F02569116700AAC404 /* Date+Ex.swift in Sources */,
+				A61629F42569116700AAC404 /* UIView+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
