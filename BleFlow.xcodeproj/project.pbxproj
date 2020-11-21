@@ -24,6 +24,17 @@
 		A61629F72569116700AAC404 /* UIView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629EE2569116700AAC404 /* UIView+ViewModel.swift */; };
 		A61629F82569116700AAC404 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61629EF2569116700AAC404 /* String+Ex.swift */; };
 		B00D5D67C5B431458668EFBE /* Pods_BleFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7D65B5EF2C9885A5D77362 /* Pods_BleFlow.framework */; };
+		BC3B35A52569590800F240D5 /* Locale+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35A12569590700F240D5 /* Locale+Ex.swift */; };
+		BC3B35A62569590800F240D5 /* DGJSON+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35A22569590800F240D5 /* DGJSON+Ex.swift */; };
+		BC3B35A72569590800F240D5 /* Bundle+Resourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35A32569590800F240D5 /* Bundle+Resourse.swift */; };
+		BC3B35A82569590800F240D5 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35A42569590800F240D5 /* NSObject+Rx.swift */; };
+		BC3B35AD2569595300F240D5 /* DGCoreDocumentPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35AC2569595300F240D5 /* DGCoreDocumentPath.swift */; };
+		BC3B35B22569596C00F240D5 /* DGCoreAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35B02569596C00F240D5 /* DGCoreAppInfo.swift */; };
+		BC3B35B32569596C00F240D5 /* DGCoreConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35B12569596C00F240D5 /* DGCoreConstant.swift */; };
+		BC3B35B8256959A900F240D5 /* DGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35B5256959A800F240D5 /* DGBaseViewController.swift */; };
+		BC3B35B9256959A900F240D5 /* DGCoreBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35B6256959A800F240D5 /* DGCoreBaseNavigationController.swift */; };
+		BC3B35BA256959A900F240D5 /* DGBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35B7256959A900F240D5 /* DGBaseViewModel.swift */; };
+		BC971A6B25695A77006E4B43 /* GDUIKitConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC971A6A25695A77006E4B43 /* GDUIKitConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +58,17 @@
 		A61629ED2569116700AAC404 /* UIFont+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Ex.swift"; sourceTree = "<group>"; };
 		A61629EE2569116700AAC404 /* UIView+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewModel.swift"; sourceTree = "<group>"; };
 		A61629EF2569116700AAC404 /* String+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		BC3B35A12569590700F240D5 /* Locale+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Locale+Ex.swift"; path = "../../../DGeneration/DGCore/DGCore/Extensions/Locale+Ex.swift"; sourceTree = "<group>"; };
+		BC3B35A22569590800F240D5 /* DGJSON+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DGJSON+Ex.swift"; path = "../../../DGeneration/DGCore/DGCore/Extensions/DGJSON+Ex.swift"; sourceTree = "<group>"; };
+		BC3B35A32569590800F240D5 /* Bundle+Resourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bundle+Resourse.swift"; path = "../../../DGeneration/DGCore/DGCore/Extensions/Bundle+Resourse.swift"; sourceTree = "<group>"; };
+		BC3B35A42569590800F240D5 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSObject+Rx.swift"; path = "../../../DGeneration/DGCore/DGCore/Extensions/NSObject+Rx.swift"; sourceTree = "<group>"; };
+		BC3B35AC2569595300F240D5 /* DGCoreDocumentPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCoreDocumentPath.swift; sourceTree = "<group>"; };
+		BC3B35B02569596C00F240D5 /* DGCoreAppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCoreAppInfo.swift; sourceTree = "<group>"; };
+		BC3B35B12569596C00F240D5 /* DGCoreConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCoreConstant.swift; sourceTree = "<group>"; };
+		BC3B35B5256959A800F240D5 /* DGBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGBaseViewController.swift; sourceTree = "<group>"; };
+		BC3B35B6256959A800F240D5 /* DGCoreBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCoreBaseNavigationController.swift; sourceTree = "<group>"; };
+		BC3B35B7256959A900F240D5 /* DGBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGBaseViewModel.swift; sourceTree = "<group>"; };
+		BC971A6A25695A77006E4B43 /* GDUIKitConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDUIKitConstant.swift; sourceTree = "<group>"; };
 		DE831CD3E05481BDDA44EFC7 /* Pods-BleFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleFlow.release.xcconfig"; path = "Target Support Files/Pods-BleFlow/Pods-BleFlow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +113,7 @@
 		A616299F2568FB9200AAC404 /* BleFlow */ = {
 			isa = PBXGroup;
 			children = (
+				BC3B359B256958D500F240D5 /* Common */,
 				A61629E225690FF900AAC404 /* Model */,
 				A61629D42568FC0600AAC404 /* Serivces */,
 				A61629D32568FBFA00AAC404 /* UI */,
@@ -111,6 +134,7 @@
 		A61629D02568FBE300AAC404 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BC3B35AC2569595300F240D5 /* DGCoreDocumentPath.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -118,6 +142,9 @@
 		A61629D12568FBE700AAC404 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BC3B35B5256959A800F240D5 /* DGBaseViewController.swift */,
+				BC3B35B7256959A900F240D5 /* DGBaseViewModel.swift */,
+				BC3B35B6256959A800F240D5 /* DGCoreBaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -125,6 +152,10 @@
 		A61629D22568FBF200AAC404 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BC3B35A32569590800F240D5 /* Bundle+Resourse.swift */,
+				BC3B35A22569590800F240D5 /* DGJSON+Ex.swift */,
+				BC3B35A12569590700F240D5 /* Locale+Ex.swift */,
+				BC3B35A42569590800F240D5 /* NSObject+Rx.swift */,
 				A61629E82569116600AAC404 /* Bundle+Ex.swift */,
 				A61629E72569116600AAC404 /* Date+Ex.swift */,
 				A61629EF2569116700AAC404 /* String+Ex.swift */,
@@ -158,6 +189,16 @@
 				A61629E32569102400AAC404 /* Flow.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BC3B359B256958D500F240D5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC3B35B02569596C00F240D5 /* DGCoreAppInfo.swift */,
+				BC3B35B12569596C00F240D5 /* DGCoreConstant.swift */,
+				BC971A6A25695A77006E4B43 /* GDUIKitConstant.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		EC90BB7B2A47E01329DEF19F /* Pods */ = {
@@ -285,17 +326,28 @@
 			files = (
 				A61629F22569116700AAC404 /* UIColor+Hex.swift in Sources */,
 				A61629F72569116700AAC404 /* UIView+ViewModel.swift in Sources */,
+				BC3B35A82569590800F240D5 /* NSObject+Rx.swift in Sources */,
+				BC3B35A52569590800F240D5 /* Locale+Ex.swift in Sources */,
 				A61629F52569116700AAC404 /* UIViewController+Ex.swift in Sources */,
 				A61629F82569116700AAC404 /* String+Ex.swift in Sources */,
+				BC3B35BA256959A900F240D5 /* DGBaseViewModel.swift in Sources */,
 				A61629A52568FB9200AAC404 /* ViewController.swift in Sources */,
+				BC3B35A62569590800F240D5 /* DGJSON+Ex.swift in Sources */,
 				A61629F32569116700AAC404 /* UIDevice+Ex.swift in Sources */,
+				BC3B35B22569596C00F240D5 /* DGCoreAppInfo.swift in Sources */,
+				BC971A6B25695A77006E4B43 /* GDUIKitConstant.swift in Sources */,
 				A61629E42569102400AAC404 /* Flow.swift in Sources */,
 				A61629F62569116700AAC404 /* UIFont+Ex.swift in Sources */,
 				A61629F12569116700AAC404 /* Bundle+Ex.swift in Sources */,
+				BC3B35B32569596C00F240D5 /* DGCoreConstant.swift in Sources */,
 				A61629A12568FB9200AAC404 /* AppDelegate.swift in Sources */,
 				A61629A32568FB9200AAC404 /* SceneDelegate.swift in Sources */,
+				BC3B35A72569590800F240D5 /* Bundle+Resourse.swift in Sources */,
 				A61629F02569116700AAC404 /* Date+Ex.swift in Sources */,
 				A61629F42569116700AAC404 /* UIView+Ex.swift in Sources */,
+				BC3B35B8256959A900F240D5 /* DGBaseViewController.swift in Sources */,
+				BC3B35B9256959A900F240D5 /* DGCoreBaseNavigationController.swift in Sources */,
+				BC3B35AD2569595300F240D5 /* DGCoreDocumentPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L6U7BB57HF;
+				DEVELOPMENT_TEAM = FZFK7VMNSL;
 				INFOPLIST_FILE = BleFlow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.BleFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -464,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L6U7BB57HF;
+				DEVELOPMENT_TEAM = FZFK7VMNSL;
 				INFOPLIST_FILE = BleFlow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,7 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidandty.BleFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

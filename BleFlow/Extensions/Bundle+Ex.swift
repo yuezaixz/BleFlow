@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import DGCore
 
 extension Bundle {
     public static func localizedString(key: String,

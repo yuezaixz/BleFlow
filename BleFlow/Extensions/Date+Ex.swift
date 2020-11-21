@@ -29,3 +29,74 @@ extension Date {
         }
     }
 }
+
+extension Date {
+    
+    /// 返回星期
+    public var weekday: Int {
+        let calendar = Calendar.current
+        return calendar.component(.weekday, from: self)
+    }
+    
+    /// 返回星期名称
+    /// - Parameter short: 是否缩写
+    public func weekdayName(short: Bool = false, locale: Locale = Locale(identifier: "en-US")) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = locale
+        dateFormatter.dateFormat = short ? "EEE" : "EEEE"
+        return dateFormatter.string(from: self)
+    }
+    
+    /// 返回年份
+    public var year: Int {
+        let calendar = Calendar.current
+        return calendar.component(.year, from: self)
+    }
+    
+    /// 返回月份
+    public var month: Int {
+        let calendar = Calendar.current
+        return calendar.component(.month, from: self)
+    }
+    
+    /// 返回月份名称
+    /// - Parameter short: 是否缩写
+    public func monthName(short: Bool = false, locale: Locale = Locale(identifier: "en-US")) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = locale
+        dateFormatter.dateFormat = short ? "MMM" : "MMMM"
+        return dateFormatter.string(from: self)
+    }
+    
+    /// 返回日期
+    public var day: Int {
+        let calendar = Calendar.current
+        return calendar.component(.day, from: self)
+    }
+    
+    /// 返回小时
+    public var hour: Int {
+        let calendar = Calendar.current
+        return calendar.component(.hour, from: self)
+    }
+    
+    /// 返回分钟
+    public var minute: Int {
+        let calendar = Calendar.current
+        return calendar.component(.minute, from: self)
+    }
+    
+    /// 返回秒
+    public var second: Int {
+        let calendar = Calendar.current
+        return calendar.component(.second, from: self)
+    }
+    
+    /// 返回 "am" 或 "pm"
+    public func amOrPmName(locale: Locale = Locale(identifier: "en-US")) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = locale
+        dateFormatter.dateFormat = "a"
+        return dateFormatter.string(from: self).lowercased()
+    }
+}
