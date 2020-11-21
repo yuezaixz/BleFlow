@@ -35,6 +35,8 @@
 		BC3B35B9256959A900F240D5 /* DGCoreBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35B6256959A800F240D5 /* DGCoreBaseNavigationController.swift */; };
 		BC3B35BA256959A900F240D5 /* DGBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3B35B7256959A900F240D5 /* DGBaseViewModel.swift */; };
 		BC971A6B25695A77006E4B43 /* GDUIKitConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC971A6A25695A77006E4B43 /* GDUIKitConstant.swift */; };
+		BC971A7B256960A9006E4B43 /* FlowIndexItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC971A7A256960A9006E4B43 /* FlowIndexItemCell.swift */; };
+		BCF6F5BE256966CE008BB4FF /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF6F5BD256966CE008BB4FF /* ReuseIdentifying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		BC3B35B6256959A800F240D5 /* DGCoreBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCoreBaseNavigationController.swift; sourceTree = "<group>"; };
 		BC3B35B7256959A900F240D5 /* DGBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGBaseViewModel.swift; sourceTree = "<group>"; };
 		BC971A6A25695A77006E4B43 /* GDUIKitConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDUIKitConstant.swift; sourceTree = "<group>"; };
+		BC971A7A256960A9006E4B43 /* FlowIndexItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowIndexItemCell.swift; sourceTree = "<group>"; };
+		BCF6F5BD256966CE008BB4FF /* ReuseIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
 		DE831CD3E05481BDDA44EFC7 /* Pods-BleFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BleFlow.release.xcconfig"; path = "Target Support Files/Pods-BleFlow/Pods-BleFlow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,9 +124,9 @@
 				A61629D22568FBF200AAC404 /* Extensions */,
 				A61629D12568FBE700AAC404 /* Base */,
 				A61629D02568FBE300AAC404 /* Utils */,
+				BC971A772569605C006E4B43 /* Businesses */,
 				A61629A02568FB9200AAC404 /* AppDelegate.swift */,
 				A61629A22568FB9200AAC404 /* SceneDelegate.swift */,
-				A61629A42568FB9200AAC404 /* ViewController.swift */,
 				A61629A62568FB9200AAC404 /* Main.storyboard */,
 				A61629A92568FB9400AAC404 /* Assets.xcassets */,
 				A61629AB2568FB9400AAC404 /* LaunchScreen.storyboard */,
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BC3B35AC2569595300F240D5 /* DGCoreDocumentPath.swift */,
+				BCF6F5BD256966CE008BB4FF /* ReuseIdentifying.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -199,6 +204,31 @@
 				BC971A6A25695A77006E4B43 /* GDUIKitConstant.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BC971A772569605C006E4B43 /* Businesses */ = {
+			isa = PBXGroup;
+			children = (
+				BC971A782569606A006E4B43 /* FlowIndex */,
+			);
+			path = Businesses;
+			sourceTree = "<group>";
+		};
+		BC971A782569606A006E4B43 /* FlowIndex */ = {
+			isa = PBXGroup;
+			children = (
+				BC971A7925696081006E4B43 /* View */,
+				A61629A42568FB9200AAC404 /* ViewController.swift */,
+			);
+			path = FlowIndex;
+			sourceTree = "<group>";
+		};
+		BC971A7925696081006E4B43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC971A7A256960A9006E4B43 /* FlowIndexItemCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EC90BB7B2A47E01329DEF19F /* Pods */ = {
@@ -327,6 +357,7 @@
 				A61629F22569116700AAC404 /* UIColor+Hex.swift in Sources */,
 				A61629F72569116700AAC404 /* UIView+ViewModel.swift in Sources */,
 				BC3B35A82569590800F240D5 /* NSObject+Rx.swift in Sources */,
+				BCF6F5BE256966CE008BB4FF /* ReuseIdentifying.swift in Sources */,
 				BC3B35A52569590800F240D5 /* Locale+Ex.swift in Sources */,
 				A61629F52569116700AAC404 /* UIViewController+Ex.swift in Sources */,
 				A61629F82569116700AAC404 /* String+Ex.swift in Sources */,
@@ -345,6 +376,7 @@
 				BC3B35A72569590800F240D5 /* Bundle+Resourse.swift in Sources */,
 				A61629F02569116700AAC404 /* Date+Ex.swift in Sources */,
 				A61629F42569116700AAC404 /* UIView+Ex.swift in Sources */,
+				BC971A7B256960A9006E4B43 /* FlowIndexItemCell.swift in Sources */,
 				BC3B35B8256959A900F240D5 /* DGBaseViewController.swift in Sources */,
 				BC3B35B9256959A900F240D5 /* DGCoreBaseNavigationController.swift in Sources */,
 				BC3B35AD2569595300F240D5 /* DGCoreDocumentPath.swift in Sources */,
