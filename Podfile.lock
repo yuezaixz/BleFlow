@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (5.3.0)
+  - Aspects (1.4.1)
+  - Dollar (9.0.0)
+  - GRDB.swift (5.1.0):
+    - GRDB.swift/standard (= 5.1.0)
+  - GRDB.swift/standard (5.1.0)
+  - RxCocoa (6.0.0-rc.1):
+    - RxRelay (= 6.0.0-rc.1)
+    - RxSwift (= 6.0.0-rc.1)
+  - RxRelay (6.0.0-rc.1):
+    - RxSwift (= 6.0.0-rc.1)
+  - RxSwift (6.0.0-rc.1)
+  - SwiftDate (6.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Aspects
+  - Dollar
+  - GRDB.swift
+  - RxCocoa (= 6.0.0-rc.1)
+  - RxSwift (= 6.0.0-rc.1)
+  - SwiftDate (~> 6.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Aspects
+    - Dollar
+    - GRDB.swift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftDate
+
+SPEC CHECKSUMS:
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  Dollar: 2fc9bdeeb2d3ae1f251461803240d5c93829ee0c
+  GRDB.swift: 9bc45e93b2aa2fa6d02bee883d803d1d187efb2f
+  RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
+  RxRelay: 56abad6d32f73567858506d08735fdb341935b9a
+  RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+
+PODFILE CHECKSUM: 52608c6331a22435edf03a7f1b36649e35b4bfd1
+
+COCOAPODS: 1.9.3
