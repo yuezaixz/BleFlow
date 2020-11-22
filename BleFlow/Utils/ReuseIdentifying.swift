@@ -17,6 +17,18 @@ public extension ReuseIdentifying {
     }
 }
 
+public protocol ClassNameIdentifying {
+    static var kClassName: String { get }
+}
+
+public extension ClassNameIdentifying {
+    static var kClassName: String {
+        return String(describing: Self.self)
+    }
+}
+
+extension NSObject: ClassNameIdentifying {}
+
 extension UICollectionViewCell: ReuseIdentifying {}
 
 extension UITableViewCell: ReuseIdentifying {}

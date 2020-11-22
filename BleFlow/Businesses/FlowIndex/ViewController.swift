@@ -27,7 +27,6 @@ class ViewController: DGBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupData()
     }
     
     // MARK: - Setup
@@ -45,12 +44,36 @@ class ViewController: DGBaseViewController {
         dataSource.apply(snapshot, animatingDifferences: true)
     }
     
+    private func setupDataSource() {
+        
+        dataSource = UICollectionViewDiffableDataSource<Section, Flow>(collectionView: collectionView) {
+            (collectionView: UICollectionView, indexPath: IndexPath, flowItem: Flow) -> UICollectionViewCell? in
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FlowIndexItemCell.kReuseIdentifier, for: indexPath) as! FlowIndexItemCell
+            cell.configureItem(self.flows[indexPath.row])
+            return cell
+        }
+
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Flow>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems([])
+        dataSource.apply(snapshot, animatingDifferences: false)
+    }
+    
+    private func setupCollectionAction() {
+        collectionView.rx.itemSelected.subscribe { [weak self] indexPath in
+            self?.performSegue(withIdentifier: FlowSketchViewController.kClassName, sender: nil)
+        }.disposed(by: rx.disposeBag)
+    }
+    
     // MARK: - UI
     
     override func makeUI() {
         collectionView.collectionViewLayout = createLayout()
-        configureDataSource()
-        
+        setupDataSource()
+        setupCollectionAction()
+        // 加载数据
+        setupData()
     }
     
     func createLayout() -> UICollectionViewLayout {
@@ -71,22 +94,6 @@ class ViewController: DGBaseViewController {
 
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
-    }
-    
-    func configureDataSource() {
-        
-        dataSource = UICollectionViewDiffableDataSource<Section, Flow>(collectionView: collectionView) {
-            (collectionView: UICollectionView, indexPath: IndexPath, flowItem: Flow) -> UICollectionViewCell? in
-            
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FlowIndexItemCell.kReuseIdentifier, for: indexPath) as! FlowIndexItemCell
-            cell.configureItem(self.flows[indexPath.row])
-            return cell
-        }
-
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Flow>()
-        snapshot.appendSections([.main])
-        snapshot.appendItems([])
-        dataSource.apply(snapshot, animatingDifferences: false)
     }
     
     // MARK: - Utils

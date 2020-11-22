@@ -158,11 +158,45 @@
                     <navigationItem key="navigationItem" title="所有工作流" id="3N2-cc-HD0"/>
                     <connections>
                         <outlet property="collectionView" destination="tFm-J4-uPr" id="Y8y-PK-gch"/>
+                        <segue destination="YWg-o6-sUL" kind="presentation" identifier="FlowSketchViewController" modalPresentationStyle="fullScreen" id="J0X-Pj-Fdl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2T8-Rn-sxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="-535"/>
+            <point key="canvasLocation" x="264" y="-535"/>
+        </scene>
+        <!--Flow Sketch View Controller-->
+        <scene sceneID="mv2-g5-tGs">
+            <objects>
+                <viewController id="YWg-o6-sUL" customClass="FlowSketchViewController" customModule="BleFlow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="at0-vp-vXx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzw-1S-obJ">
+                                <rect key="frame" x="16" y="54" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xrY-Rr-otI"/>
+                                    <constraint firstAttribute="width" constant="30" id="zLK-o5-Rzd"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="backAction:" destination="YWg-o6-sUL" eventType="touchUpInside" id="4na-EF-v19"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rr6-RT-fhY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hzw-1S-obJ" firstAttribute="top" secondItem="Rr6-RT-fhY" secondAttribute="top" constant="10" id="LRo-Gy-xU9"/>
+                            <constraint firstItem="Hzw-1S-obJ" firstAttribute="leading" secondItem="Rr6-RT-fhY" secondAttribute="leading" constant="16" id="NY6-12-l8M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGs-9L-i1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="-535.04464285714278"/>
         </scene>
         <!--我的工作流-->
         <scene sceneID="UFu-Sx-KXs">
@@ -203,6 +237,10 @@
     <resources>
         <image name="appletv.fill" catalog="system" width="128" height="115"/>
         <image name="ellipsis.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
